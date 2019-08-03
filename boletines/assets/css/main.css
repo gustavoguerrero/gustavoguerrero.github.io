@@ -4,12 +4,28 @@ morado #642b73
 negro #999
 gris #151515
 */
+html{
+    font-family: 'Nunito', sans-serif;
+}
 .container{
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    height: 100vh;
+    /*width: 100vw;*/
+    display: flex; /*le dice que va a usar flexbox*/
+    align-items: center; /*centrado del item container / va en conjunto con justify-content*/
+    justify-content: center; /*centrado del item container/ va en conjunto con el align-items*/
 }
+/*posicionamientos */
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%
+    heigth: 100%;
+    background-color: #fff;
+}
+
 .red{
     height: 200px;
     width: 100px;
