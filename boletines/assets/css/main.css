@@ -49,11 +49,12 @@ a{
     padding: 1em;
     text-align: left;
 }
-.table tr:nth-child(even){
-    background-color: rgb(247, 238, 118);
+.table tr:nth-child(even){ 
     /*pseudo clase que determina el color 
     de fondo de los pares 
     (even) de class=table*/
+    background-color: rgb(247, 238, 118);
+    
 }
 .fa-star{
     color: #ffc400;
