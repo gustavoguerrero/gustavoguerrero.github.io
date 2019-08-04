@@ -1,9 +1,21 @@
 /*
-
+colors
+oranged
 */
 html{
     font-family: 'Nunito', sans-serif;
 }
+a{
+    text-decoration: none; /*modifica la decoracion del texto de los links (quita el subrayado)*/ 
+    color: orangered;
+    text-align: center;
+    font-weight: 700;
+}
+
+.title {
+    text-transform: uppercase /* hace q el titulo sea mayuscula (uppercase)*/
+}
+
 .container{
     background: #f12711;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
@@ -23,14 +35,17 @@ html{
     background-color: #fff;
 }
 
-.red{
-    height: 200px;
-    width: 100px;
-    background-color:red;
+.paragraph {
+
+    line-height: 1.5em; /*es el interlineado*/
+    font-weight: 300;
 }
-#boton-pago{
-    background-color: yellow;
+.table{
+    width: 100%;
+    border-spacing: 0;
+
 }
-td{
-    border: solid 1px;
+.table td, .table th{ 
+    padding: 1em;
+    text-align: left;
 }
