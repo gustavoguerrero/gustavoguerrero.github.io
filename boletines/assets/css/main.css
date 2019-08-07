@@ -6,8 +6,8 @@ html{
     font-family: 'Nunito', sans-serif;
 }
 a{
-    text-decoration: none; /*modifica la decoracion del texto de los links (quita el subrayado)*/ 
-    color: orangered;
+    text-decoration: none; /*modifica la decoracion del texto de los links (quita el subrayado)*/
+    /*color: orangered;*/
     text-align: center;
     font-weight: 700;
 }
@@ -41,18 +41,30 @@ a{
     position: absolute;
     top: 1em;
     right: 1em;
-    
+
+
+
+
+
 }
 
 .close{
+  /* class que posiciona un boton con un link*/
     height: 40px;
     width: 40px;
-    /*color: white;*/
+    color: white;
     border-radius: 50%;
-    background-color: #f12711
-    display: inline-block;
+    background-color: #f12711;
+    display:inline-block;
     box-shadow: 0 3px 6px rgba(0,0,0,0,16), 0 3px 6px rgba(0,0,0,0,23);
-    
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
 }
 
 .paragraph {
@@ -65,16 +77,16 @@ a{
     border-spacing: 0;
 
 }
-.table td, .table th{ 
+.table td, .table th{
     padding: 1em;
     text-align: left;
 }
-.table tr:nth-child(even){ 
-    /*pseudo clase que determina el color 
-    de fondo de los pares 
+.table tr:nth-child(even){
+    /*pseudo clase que determina el color
+    de fondo de los pares
     (even) de class=table*/
     background-color: rgb(247, 238, 118);
-    
+
 }
 .fa-star{
     color: #ffc400;
@@ -84,12 +96,12 @@ a{
    /* border-bottom-style: solid;
     border-width: 2px;
     border-color: #c6426e;*/
-    /*abajo es lo mismo pero 
+    /*abajo es lo mismo pero
     como shorthand properties*/
-    
+
     border-bottom: solid 2px  #c6426e;
     padding-bottom: 1em
-    
+
 }
 
 .position{
@@ -102,5 +114,5 @@ a{
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    
+
 }
