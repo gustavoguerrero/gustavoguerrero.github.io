@@ -7,10 +7,17 @@ html{
 }
 a{
     text-decoration: none; /*modifica la decoracion del texto de los links (quita el subrayado)*/
-    /*color: orangered;*/
+    color: orangered;
     text-align: center;
     font-weight: 700;
 }
+a:hover{ /*pseudo clase que marca la animacion al pasar mouse sobre link*/
+  opacity: 0.7;
+}
+a:visited{
+  color: orangered;
+}
+
 
 .title {
     text-transform: uppercase /* hace q el titulo sea mayuscula (uppercase)*/
@@ -35,16 +42,15 @@ a{
     background-color: #fff;
     border-radius: 4px;
     position: relative;
+    /*box-shadow: difHorizontal difVertical desenfoque amplitud color*/
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 1.8em;
 }
 
 .actions{
     position: absolute;
     top: 1em;
     right: 1em;
-
-
-
-
 
 }
 
@@ -56,7 +62,7 @@ a{
     border-radius: 50%;
     background-color: #f12711;
     display:inline-block;
-    box-shadow: 0 3px 6px rgba(0,0,0,0,16), 0 3px 6px rgba(0,0,0,0,23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     font-weight: 300;
     cursor: pointer;
     display: flex;
@@ -71,6 +77,9 @@ a{
 
     line-height: 1.5em; /*es el interlineado*/
     font-weight: 300;
+    text-align: justify;
+    /*padding-left: 20px; /*distancia desde los bordes*/
+    /*padding-right: 20px; /*idem*/
 }
 .table{
     width: 100%;
@@ -92,14 +101,14 @@ a{
     color: #ffc400;
 }
 .title-item{
-
+    text-transform: uppercase;
    /* border-bottom-style: solid;
     border-width: 2px;
     border-color: #c6426e;*/
     /*abajo es lo mismo pero
     como shorthand properties*/
 
-    border-bottom: solid 2px  #c6426e;
+    border-bottom: solid 2px  orangered;
     padding-bottom: 1em
 
 }
