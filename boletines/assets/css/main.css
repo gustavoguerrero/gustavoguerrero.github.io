@@ -46,6 +46,7 @@ a:visited{
     /*box-shadow: difHorizontal difVertical desenfoque amplitud color*/
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 1.8em;
+    overflow: scroll ;
 }
 
 .actions{
@@ -116,6 +117,8 @@ a:visited{
     font-weight: bold;
     color: #f12711;
     font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
 }
 .main-images{
     float: left;
@@ -125,7 +128,7 @@ a:visited{
 .position{
     background-color: #c9a711;
     color: white;
-    padding: 10px;
+    padding: 0.5em;
     border-radius: 4px;
     margin-right: 0.5em;
     /*tambien podria ser:
