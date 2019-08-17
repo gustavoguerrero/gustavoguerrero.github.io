@@ -1,0 +1,183 @@
+/*
+colors
+oranged
+*/
+html{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none; /*modifica la decoracion del texto de los links (quita el subrayado)*/
+    color: orangered;
+    text-align: center;
+    font-weight: 700;
+}
+a:hover{ /*pseudo clase que marca la animacion al pasar mouse sobre link*/
+  opacity: 0.8;
+}
+a:visited{
+  color: orangered;
+}
+
+img{
+    max-width: 100%;
+}
+
+.title {
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+.container{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    /*width: 100vw;*/
+    display: flex; /*le dice que va a usar flexbox*/
+    align-items: center; 
+    justify-content: center; 
+}
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    /*box-shadow: difHorizontal difVertical desenfoque amplitud color*/
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    overflow: auto;
+}
+.content{
+    padding:1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-weight: bold;
+    color: #c9a711;
+
+}
+th{
+    display: none;
+
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+}
+
+.close{
+  /* class que posiciona un boton con un link*/
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #f12711;
+    display:inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.paragraph {
+
+    line-height: 1.5em; /*es el interlineado*/
+    font-weight: 300;
+    text-align: justify;
+    /*padding-left: 20px; /*distancia desde los bordes*/
+    /*padding-right: 20px; /*idem*/
+}
+.table{
+    width: 100%;
+    border-spacing: 0;
+
+}
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+.table tr:nth-child(even){
+    /*pseudo clase que determina el color
+    de fondo de los pares
+    (even) de class=table*/
+    background-color: rgb(247, 238, 118);
+
+}
+.fa-star{
+    color: #ffc400;
+}
+.title-item{
+    font-size: 2em;
+   /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #c6426e;*/
+    /*abajo es lo mismo pero
+    como shorthand properties*/
+    border-bottom: solid 2px  orangered;
+    padding-bottom: 1em
+
+}
+.address{
+    font-weight: bold;
+    color: #f12711;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+}
+.main-images{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+.position{
+    background-color: #c9a711;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    display:inline-block;
+    /*tambien podria ser:
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;*/
+
+}
+@media (min-width:550px){
+    th{
+        display: table-cell;
+    }
+   td{
+       width: auto;
+        display: table-cell;
+
+   }
+   td:nth-of-type(1){
+       font-size: 1em;
+
+   }
+   .content{
+    padding: 1.8em;
+   }
+}
+
+@media (min-height:550px){
+    .content{
+        height:500px;
+    }
+
+}
