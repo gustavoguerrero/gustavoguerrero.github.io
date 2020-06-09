@@ -10,11 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>UTHC|Unión de Trabajadores del Hospital de Clinicas</title>
-      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
       <link href="https://fonts.googleapis.com/css?family=Righteous&amp;subset=latin-ext" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-      <script src="main.js"></script>
+      <script src="{{url_for('static', filename='js/main.js') }}"></script>
   </head>
 
   <body>
@@ -28,42 +28,22 @@
           <div class="card animated fadeInUp">
             <header class="main-header">
                 <nav class="main-nav">
-                  <a href="index.html" class="nav-link">Inicio</a>
+                  <a href="{{ url_for('index') }}" class="nav-link">Inicio</a>
                   <a href="http://www.uthc.org.uy/CONVENIOS/" class="nav-link">Convenios</a>
-                  <a href="contacto.html" class="nav-link">Contacto</a>
+                  <a href="{{ url_for('contacto') }}" class="nav-link">Contacto</a>
                 </nav>
             </header>
 
              <div class="menu body animated fadeInDown">
                <header class="text-center">
-                 <img src="./imagenes/logo_uthc.png" height="100" alt="Logo de la UTHC">
+                 <img src="{{url_for('static', filename='imagenes/logo_uthc.png') }}" height="100" alt="Logo de la UTHC">
                  <h1 class="red-text permanent-marker title threeD">UTHC PIT-CNT</h1>
                </header>
 
                <div class="productos">
-                 <div class="row center-xs" id="opacity">
-                   <div class="col-xs-10 col-sm-6 col-md-4 product animated fadeInDown delay-1">
-                     <div class="card" >
-                       <img src="./imagenes/logo_uthc0.png" alt="Noticias">
-                       <h2>Noticias</h2>
-                     </div>
-                   </div>
-
-                     <div class="col-xs-10 col-sm-6 col-md-4 product animated fadeInDown delay-2">
-                       <div class="card">
-                         <img src="./imagenes/logo_uthc1.png" alt="Resoluciones">
-                         <h2>Resoluciones</h2>
-                       </div>
-
-                     </div>
-                       <div class="col-xs-10 col-sm-6 col-md-4 product animated fadeInDown delay-3">
-                         <div class="card">
-                           <img src="./imagenes/logo_uthc2.png" alt="Convenios">
-                           <h2>Convenios</h2>
-                         </div>
-                       </div>
-
-                 </div>
+                 {%block content%}
+                 
+                 {%endblock%}
                </div>
 
              </div>

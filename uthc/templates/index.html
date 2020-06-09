@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row center-xs" id="opacity">
+  <div class="col-xs-10 col-sm-6 col-md-4 product animated fadeInDown delay-1">
+    <div class="card" >
+      <img src="{{url_for('static', filename='imagenes/logo_uthc0.png') }}" alt="Noticias">
+      <h2>Noticias</h2>
+    </div>
+  </div>
+
+    <div class="col-xs-10 col-sm-6 col-md-4 product animated fadeInDown delay-2">
+      <div class="card">
+        <img src="{{url_for('static', filename='imagenes/logo_uthc1.png') }}" alt="Resoluciones">
+        <h2>Resoluciones</h2>
+      </div>
+
+    </div>
+      <div class="col-xs-10 col-sm-6 col-md-4 product animated fadeInDown delay-3">
+        <div class="card">
+          <img src="{{url_for('static', filename='imagenes/logo_uthc2.png') }}" alt="Convenios">
+          <h2>Convenios</h2>
+        </div>
+      </div>
+
+</div>
+{%endblock%}
+              

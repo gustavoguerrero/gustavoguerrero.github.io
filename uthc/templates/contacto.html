@@ -1,0 +1,19 @@
+
+{%extends "layout.html"%}
+
+{% block content %}
+<div class="row center-xs">
+  <div class="product animated fadeInDown delay-1">
+    <div class="card">
+        <form action="send.php">
+            <h2 class="h2">Contacto</h2>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="email" placeholder="E-Mail" required>
+                <input type="text" name="celular" placeholder="Celular" required>
+                <textarea name="mensaje" id="" placeholder="Escriba aqui su mensaje" cols="30" rows="10" required></textarea>
+                <input type="submit" value="ENVIAR" id="boton">
+        </form>
+    </div> 
+  </div>
+</div>
+{%endblock%}                         
