@@ -1,0 +1,181 @@
+*{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+}
+
+img {
+
+	max-width: 100%;
+	border-radius: 200px;
+	height: auto;
+}
+
+.contenedores {
+	display: flex;
+	flex-wrap: wrap;
+	color:black;
+	align-items: stretch;/*setteando en stretchme quedó mejor la distribución*/
+
+}
+
+.titular {
+
+	font-style: bold;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 40;
+	background: #c5a957;
+	text-align: center;
+	border: 3px solid white
+	
+}
+
+h1 {
+	color: #6E5418
+}
+
+.icono {
+
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;	
+	background: #c5a957;
+	text-align: center;
+	border: 3px solid white
+}
+
+.columnas {
+	flex-grow: 10;
+	color: yellow;
+	text-align: center;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	background-color: #c5a957;
+	border: 3px solid white
+
+}
+
+.columnas:hover {
+
+	 background-color: #6E5418;
+	 transform : scale(1.02);
+     -moz-transform : scale(1.02);      /* Firefox */
+     -webkit-transform : scale(1.02);   /* Chrome - Safari */
+     -o-transform : scale(1.02);        /* Opera */
+}
+
+.fila-1 {
+
+	flex-grow: 10;
+	color: #c5a957;
+	text-align: center;
+	padding: 100px 30%;
+	align-items:center;
+	justify-content: center;
+	background: url("https://upload.wikimedia.org/wikipedia/commons/9/93/Libro_Los_Viejos_Abuelos_Foto_68.png") center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 3px solid white
+}
+
+.fila-2 {
+	
+	/*background: url("https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL2FydHdvcmtcL2ltYWdlRmlsZVwvNWViZDFjNjRhYTVhNi5qcGciLCJyZXNpemUsMTUwMHxmb3JtYXQsd2VicCJdfQ.rx71qq84PUoHefywosuKq0Xu5MZAK5wbSfPIF7M04Po.webp") center;*/
+	border: 3px solid white
+
+}
+
+#sueño {
+
+	border-radius: 0px;
+
+}
+
+.fila-3 {
+
+	flex-grow: 10;
+	align-items: center; 
+	justify-content: center;
+	background: #ffffff;
+	border: 3px solid white
+}
+
+/* Efecto modal*/
+
+#txt {
+	color:#fff;
+	/*padding:30px;*/
+	padding: 2vw;
+	font-weight:bold;
+	letter-spacing:2px;
+	border-radius:7px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+a {
+	text-decoration:none;
+}
+
+p {
+	font-weight:bold;
+	color: black;
+}
+
+.ContModal {
+	background:#ccc;
+	width:250px;
+	height:250px;
+	padding:30px;
+	margin:14% auto;
+	position:relative;
+	border-radius:8px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ClaseModal {
+	background-color: rgba(0,0,0,.8);
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	opacity:0;
+	transition:all 2s;
+	pointer-events:none;
+
+}
+
+#EfectoModal:target /*:target se utiliza para diseñar el elemento de destino activo actual*/
+{
+ 	opacity:1;
+ 	pointer-events:auto; 
+}
+
+.x-mod {
+	color:#222;
+	transition:all 2s;
+}
+
+@media screen and (max-width:576px) {
+	.ContModal
+	{
+		margin-top:40%;
+	}
+	.fila-1 {
+		padding:30vw;
+	}
+	
+	
+}
+@media screen and (min-width: 1023px) {
+	body{
+		padding: 6vw;
+	}
+}
